@@ -1,0 +1,122 @@
+
+# Pet Store Management System
+
+A full-stack pet store management system built with Django, MongoDB, and vanilla JavaScript.
+
+
+
+## Features
+
+- **Product Management**:
+  - Add new pet products (dogs, cats)
+  - View all products categorized by pet type
+  - Delete products
+- **Modern UI**:
+  - Responsive design with Bootstrap 5
+  - Interactive product cards
+  - Clean, minimalist interface
+- **Backend**:
+  - Django REST API
+  - MongoDB database with MongoEngine
+  - CORS support for frontend-backend communication
+
+## Technologies Used
+
+### Frontend
+- HTML5, CSS3, JavaScript (ES6)
+- Bootstrap 5
+- Bootstrap Icons
+
+### Backend
+- Python 3
+- Django
+- MongoDB (with MongoEngine)
+
+## Project Structure
+
+```
+petstore/
+├── products/                # Django app
+│   ├── models.py            # MongoDB models
+│   ├── views.py             # API views
+│   ├── urls.py              # App URLs
+│   └── templates/           # HTML templates
+│       ├── form.html        # Add product form
+│       └── index.html       # Main page
+├── static/                  # Static files
+│   ├── assets/              # Images, CSS
+│   └── js/                  # JavaScript modules
+│       ├── shop.js          # Product display logic
+│       ├── navbar.js        # Navigation bar
+│       ├── landing.js       # Hero section
+│       └── footer.js        # Footer component
+├── petstore/                # Project config
+│   ├── settings.py          # Django settings
+│   └── urls.py              # Project URLs
+└── manage.py                # Django management
+```
+
+## Installation
+
+### Prerequisites
+- Python 3.8+
+- MongoDB
+- Node.js (for optional frontend tools)
+
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kristina-Kristi-Spahi/PetShop
+   cd petstore
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Set up MongoDB:
+   - Ensure MongoDB is running locally on port 27017
+   - Create a database named 'petstore'
+
+5. Run migrations:
+   ```bash
+   python manage.py migrate
+   ```
+
+6. Start the development server:
+   ```bash
+   python manage.py runserver
+   ```
+
+7. Access the application at `http://localhost:8000`
+
+## API Endpoints
+
+- `GET /api/products/` - Get all products
+- `POST /add_products/` - Add a new product
+- `DELETE /api/products/<id>/delete/` - Delete a product
+## Future Enhancements
+
+- User authentication system
+- Shopping cart functionality
+- Product search and filtering
+- Admin dashboard
+- Product image uploads
+
+## License
+
+MIT License
+
+## Contact
+
+Your Name - your.email@example.com
+
+Project Link: https://github.com/Kristina-Kristi-Spahi/PetShop
